@@ -5,7 +5,7 @@ function updateTicker() {
     
 
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://tpltest.cf/ticker/rawticker.txt', true);
+    request.open('GET', 'http://cors.io/?tpltest.cf/ticker/rawticker.txt', true);
 
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
