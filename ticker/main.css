@@ -1,0 +1,53 @@
+@keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .tcontainer{
+    width: 100%;
+    overflow: hidden;
+  }
+  .ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    background-color: #333;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 40s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused;
+  }
+  .ticker-item{
+    white-space: pre;
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 24px;
+    color: white;
+    font-family: "Arial", sans-serif;
+  }
+  .ticker-header{
+      font-size: 24px;
+      display: inline-block;
+      color: white;
+      font-family: "Arial", sans-serif;
+  }
+  .ticker-top{
+      display: inline-block;
+      color: #1098f7;
+  }
+  .ticker-ingame{
+        display: inline-block;
+        color: #decccc;
+  }
+    .ticker-final{
+        display: inline-block;
+        color: #b89e97;
+  }
